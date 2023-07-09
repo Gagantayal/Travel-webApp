@@ -1,0 +1,242 @@
+body{
+  margin: 0%;
+  padding: 0%;
+}
+.flip-card {
+    background-color: transparent;
+    width: 190px;
+    height: 254px;
+    perspective: 1000px;
+    font-family: sans-serif;
+  }
+  
+  .title {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .img{
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: .5rem;
+  }
+  
+  .flip-card-front, .flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid blue;
+    border-radius: 1rem;
+  }
+  
+  .flip-card-front {
+    background: blue;
+    color: coral;
+  }
+  
+  .flip-card-back {
+     background: /*linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%,
+       bisque 40%, rgb(255, 185, 160) 78%); */linear-gradient(135deg, rgb(82, 229, 231) 10%, rgb(19, 12, 183) 100%);
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .card-container
+  {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+
+
+
+/* 
+  second card entry */
+  .card {
+    overflow: visible;
+    position: relative;
+    width: 190px;
+    height: 254px;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+  }
+  
+  .card:before,
+  .card:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background: #fff;
+    transition: 0.5s;
+    z-index: -99;
+  }
+  
+  .details {
+    position: absolute;
+    left: -10px;
+    right: 0;
+    bottom: 5px;
+    height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  /*Image*/
+  .imgbox {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: #222;
+    transition: 0.5s;
+    z-index: 1;
+  }
+  
+  .img {
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+      -o-object-fit: cover;
+         object-fit: cover;
+      border-radius: .5rem;
+    background: #4158D0;
+    background-image: linear-gradient(45deg, #4158D0, #C850C0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /*Text*/
+  .title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #777;
+  }
+  
+  .caption {
+    font-weight: 500;
+    font-size: 16px;
+    color: #4158D0;
+    display: block;
+    margin-top: 5px;
+  }
+  
+  /*Hover*/
+  .card:hover .imgbox {
+    bottom: 80px;
+  }
+  
+  .card:hover:before {
+    transform: rotate(20deg);
+  }
+  
+  .card:hover:after {
+    transform: rotate(10deg);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, .2);
+  }
+
+
+  .space
+  {
+    padding-left: 39rem;
+    color:#fff;
+      text-shadow: 2px 2px 5px rgb(0, 166, 255);
+    
+  }
+  .space-2
+  {
+    padding-left: 42rem;
+    text-shadow: 2px 2px 5px rgb(0, 166, 255);
+    color:white;
+  }
+
+  .space-3{
+    padding-left: 30rem;
+    text-shadow: 2px 2px 5px rgb(0, 166, 255);
+    color:white;
+  }
+  .space-4{
+    padding-left: 24rem;
+    text-shadow: 2px 2px 5px rgb(0, 166, 255);
+    color:white;
+  }
+  .space-5{
+    padding-left: 34rem;
+    text-shadow: 2px 2px 5px rgb(0, 166, 255);
+    color:white;
+  }
+  .space-6{
+    padding-left: 31rem;
+    text-shadow: 2px 2px 5px rgb(0, 166, 255);
+    color:white
+
+  }
+
+
+
+.bg{
+  background: linear-gradient(135deg, rgb(82, 229, 231) 10%, rgb(19, 12, 183) 100%);
+  margin: 0%;
+  padding: 0%;;
+}
+
+hr {
+  margin-left: 45%;
+  margin-top: 5%;
+  margin-bottom: 
+  5%;
+  width: 10%;
+  background-color: red;
+  border: none;
+  height: 2px;
+}
+.space-7{
+  padding-left: 22rem;
+    text-shadow: 2px 2px 5px rgb(0, 166, 255);
+    color:white;
+}
+.space-8{
+  padding-left: 5rem;
+    text-shadow: 2px 2px 5px rgb(0, 166, 255);
+    color:white;
+}
+.space-9{
+  padding-left: 42rem;
+    text-shadow: 2px 2px 5px rgb(0, 166, 255);
+    color:white;
+}
+#space-g
+{
+  padding-left: 42rem;
+}
